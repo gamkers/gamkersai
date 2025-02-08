@@ -1,3 +1,4 @@
+import bg from "./bg.jpg";
 
 interface HeroProps {
   onTryNow: () => void;
@@ -10,14 +11,14 @@ export function Hero({ onTryNow }: HeroProps) {
       <div className="absolute inset-0 bg-gradient-to-b from-purple-900/20 to-black/50"></div>
       <div className="absolute inset-0">
         <img 
-          src="https://img.freepik.com/free-vector/dark-wavy-background-theme_23-2148417305.jpg?t=st=1738984396~exp=1738987996~hmac=9ed9d698fb96406a273b952f642b74bb6d92d550c4883256d0406b3347b72650&w=1380"
+          src={bg} 
           alt="Cybersecurity Background"
           className="w-full h-full object-cover opacity-20"
         />
       </div>
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-600">
+        <h1 className="text-5xl md:text-7xl font-extrabold mb-6 text-white bg-clip-text text-transparent bg-gradient-to-r from-gray-300 to-gray-500">
             Secure Your Code. Defend Your Systems.
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8">
